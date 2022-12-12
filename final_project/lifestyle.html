@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lifestyle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/jpg" href="images/logo_tab.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+<!-- /***************** hamburger ********************/ -->
+    <ul class="menu">
+      <li><a class="menuItem" href="index.html">Home</a></li>
+      <li><a class="menuItem" href="bio.html">Biography</a></li>
+      <li><a class="menuItem" href="recordings.html">Recordings</a></li>
+      <li><a class="menuItem" href="gallery.html">Gallery</a></li>
+    </ul>
+    <button class="hamburger show_menu hide_menu">
+      <!-- material icons https://material.io/resources/icons/ -->
+      <i class="menuIcon material-icons">menu</i>
+      <!-- the css display is set to 0 so its not supposed to show but it still does -->
+      <i class="closeIcon material-icons">close</i>
+    </button>
+<!-- /***************** hamburger ********************/ -->
+    <div id="container">
+      <header>
+        <h1><a href="index.html">Lifestyle</a></h1>
+      </header>
+
+      <nav class="hidden_mobile not_hidden">
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="recordings.html">Recordings</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+
+      <main>
+        <p class="h-stretch center">Cubing</p>
+
+        <iframe class="video-container" width="100%" height="140%" src="https://www.youtube.com/embed/6pX9qZA0ACs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video-container" width="100%" height="140%" src="https://www.youtube.com/embed/NcMErfTVRzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+        <p class="h-stretch center">Vlogs</p>
+        <iframe class="video-container" width="100%" height="140%" src="https://www.youtube.com/embed/KH0Hht_Err8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video-container" width="100%" height="140%" src="https://www.youtube.com/embed/FHWDtUvgPzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        
+        <p class="h-stretch center">Lifting</p>
+        <video width="100%" height="auto" controls>
+          <source src="videos/6_reps_70.mp4" type="video/mp4" label="6 reps 70lbs pressing">
+        </video>
+        <video class="v-stretch" width="100%" height="100%" controls>
+          <source src="videos/45.mp4" type="video/mp4" label="45lbs max nov2021"></video>
+        <video width="100%" height="auto" controls>
+          <source src="videos/75.mp4" type="video/mp4" label="one rep 75lbs pressing">
+        </video>
+      
+      </main>
+
+      <footer>
+        <p><img class="da_initials" src="images/da_initials.png" width="200px" height="20px" alt="DA logo"></p>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
