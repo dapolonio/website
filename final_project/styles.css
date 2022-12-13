@@ -127,19 +127,22 @@ main {
   margin-left: -70px;
   margin-top: -50px;
 }
-.front_pg_gallery {
+/*.front_pg_gallery {
   display: block;
-/*  so you set the width of the images to 100%, but the attributes of width and height that you give
-  in the html img tag (more importantly the width) are what define the -height- of the image*/
+  so you set the width of the images to 100%, but the attributes of width and height that you give
+  in the html img tag (more importantly the width) are what define the -height- of the image
   width: 100%;
   transition: opacity 500ms;
   object-fit: cover;
+}*/
+.front_page_img {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .gallery_pg {
   display: block;
   width: 100%;
   object-fit: cover;
-  overflow-x: hidden;
   padding: 5px;
 }
 /*to stretch images, either vertically or horizontally with span of*/
@@ -204,7 +207,24 @@ footer {
 .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; overflow: hidden; }
 .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-@media (max-width: 600px) {
+.aligning {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.aligning_lifting_vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-left: 10px; 
+}
+
+/*100vw
+100px*/
+
+
+@media (min-width: 0px) {
   main {
     grid-template-columns: 1fr;
   }
@@ -228,14 +248,10 @@ footer {
   .h-stretch {
     grid-column: span 1;
   }
-/*  iframe {
-    overflow-x: hidden;
-  }*/
 }
 
 
-
-@media (max-width: 1920px) {
+@media (min-width: 400px) {
 
   main {
     grid-template-columns: 1fr 1fr;
@@ -256,5 +272,8 @@ footer {
   .h-stretch {
     grid-column: span 2;
   }
-
+  /*the 2nd horizontal video will only move up when it's on desktop, so it doesnt mess up mobile*/
+  .move_up_vid {
+  margin-top: -400px;
+}
 }

@@ -66,6 +66,8 @@ function changeOpacity() {
   images[10].style.opacity = '0.5';
   images[11].style.opacity = '0.5';
   images[12].style.opacity = '0.5';
+  images[13].style.opacity = '0.5';
+  images[14].style.opacity = '0.5';
 
 
   this.style.opacity = '1'; // keep current image opaque
@@ -87,6 +89,8 @@ function resetOpacity() {
   images[10].style.opacity = '1';
   images[11].style.opacity = '1';
   images[12].style.opacity = '1';
+  images[13].style.opacity = '1';
+  images[14].style.opacity = '1';
 }
 
 // event listeners for hover on
@@ -103,6 +107,8 @@ images[9].addEventListener('mouseover', changeOpacity);
 images[10].addEventListener('mouseover', changeOpacity);
 images[11].addEventListener('mouseover', changeOpacity);
 images[12].addEventListener('mouseover', changeOpacity);
+images[13].addEventListener('mouseover', changeOpacity);
+images[14].addEventListener('mouseover', changeOpacity);
 
 // event listeners for hover off
 images[0].addEventListener('mouseout', resetOpacity);
@@ -117,3 +123,5 @@ images[8].addEventListener('mouseout', resetOpacity);
 images[9].addEventListener('mouseout', resetOpacity);
 images[10].addEventListener('mouseout', resetOpacity);
 images[12].addEventListener('mouseout', resetOpacity);
+images[13].addEventListener('mouseout', resetOpacity);
+images[14].addEventListener('mouseout', resetOpacity);
